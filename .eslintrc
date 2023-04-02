@@ -1,4 +1,8 @@
-{
-  "extends": ["plugin:prettier/recommended"],
-  "parser": "babel-eslint"
-}
+{"extends": [
+  "eslint:recommended",
+  "plugin:@typescript-eslint/recommended"
+],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "off"
+    }
+  }
