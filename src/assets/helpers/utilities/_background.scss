@@ -1,0 +1,46 @@
+// stylelint-disable declaration-no-important
+
+@each $color, $value in $theme-colors {
+  @include bg-variant('.bg-#{$color}', $value, true);
+}
+
+@if $enable-gradients {
+  @each $color, $value in $theme-colors {
+    @include bg-gradient-variant('.bg-gradient-#{$color}', $value);
+  }
+}
+
+.bg-primary-alpha {
+  background-color: $bg-table-head;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-background {
+  background-color: #f1f9ff !important;
+}
+
+.bg-start {
+  height: calc(100% - 10px);
+  width: calc(100% - 40px);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.bg-theme-white {
+  background-color: $white !important;
+}
+.dark {
+  .bg-theme-white {
+    background-color: $dark-bg !important ;
+  }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
