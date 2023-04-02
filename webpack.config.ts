@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  target: 'web',
   mode: 'development',
   entry: {
     main: ['./src/index.tsx'],
@@ -18,7 +17,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'static'),
     publicPath: '/',
   },
   optimization: {
