@@ -60,7 +60,7 @@ export const FormSearch = () => {
   return (
     <>
       <WrapperForm>
-        <span className={classes.smallText}>Enter developer name below</span>
+        <span className={`text-nowrap ${classes.smallText}`}>Enter developer name below</span>
         <Form schema={schema} onSubmit={debounceSearch} className={classes.formWrap}>
           <TextInput fullWidth name="q" label="" placeholder="ex: hanif" size="small" className={classes.textInput} />
           <Button variant="contained" color="primary" type="submit" className={classes.buttonSubmit}>
