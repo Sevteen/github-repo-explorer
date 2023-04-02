@@ -13,6 +13,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
+      process: 'process/browser',
     },
   },
   output: {
@@ -37,7 +38,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    // new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }), // new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
     rules: [
