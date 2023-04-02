@@ -2,7 +2,7 @@ import { Octokit } from '@octokit/rest';
 import { UserRepos } from '../stores/types';
 import { ParamsUsers, ResponseUsers } from './api.types';
 
-const ACCESS_TOKEN = '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';
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 
 class GithubAPI {
   private octokit: Octokit;

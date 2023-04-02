@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { createStyles, makeStyles } from '@mui/styles';
+import { createStyles, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => {
   return createStyles({
@@ -18,20 +18,20 @@ const useStyles = makeStyles((theme) => {
     },
     mainText: {
       fontSize: '70px',
-      fontWeight: '700',
+      fontWeight: 700,
       color: '#22272E',
     },
     secondaryText: {
       marginTop: '1.3rem',
       fontSize: '24px',
-      fontWeight: '400',
+      fontWeight: 400,
       color: '#22272E',
       width: '100%',
     },
     smallText: {
       marginTop: '1rem',
       fontSize: '16px',
-      fontWeight: '400',
+      fontWeight: 400,
       color: '#22272E',
     },
 
