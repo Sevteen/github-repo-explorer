@@ -1,5 +1,6 @@
 {
   "name": "github-repositories-explorer",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,6 +38,7 @@
     "react-hook-form": "^7.43.8",
     "react-router-dom": "^6.2.2",
     "sass": "^1.60.0",
+    "serve": "^14.2.0",
     "styled-components": "^5.3.9",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
