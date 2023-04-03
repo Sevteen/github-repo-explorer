@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+# Github Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Github Finder is a web application built with React JS and Webpack using TypeScript as the programming language. It also utilizes Material UI with Bootstrap for styling and Zustand for state management. The React Hook Form library is used for form handling, and Joi is used for validation. Jest is used for testing modules.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+The main feature of Github Finder is the ability to search for Github users using keywords and view their repositories. The app displays basic user information, such as username, avatar, and bio, along with a list of their public repositories. Search functionality is implemented with React Hook Form and Joi validation, ensuring that all search queries are valid and in the correct format.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+To install the Github Finder app, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone this repository to your local machine:
 
-### `npm run build`
+```bash
+  git clone https://github.com/ilhamhanif07/github-repo-explorer.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Navigate into the project directory and install the dependencies using yarn:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd github-repo-explorer
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Note: Please use Yarn instead of NPM to install dependencies to ensure compatibility with the project.
 
-### `npm run eject`
+- Create a new .env file and add your Github access token as ACCESS_TOKEN. You can obtain a Github access token by following these instructions: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+ACCESS_TOKEN=your_access_token_here
+```
+## Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To start the development server, run the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+  yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This will compile the TypeScript code and launch a local development server at http://localhost:7000. The app should automatically open in your web browser. 
 
-## Learn More
+To build the app for production, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn build
+
+```
+
+This will compile and optimize your code for production, placing the resulting files in the `static` directory.
+
+
+To run the tests, use the following command:
+
+```bash
+yarn test
+```
+
+This will launch the Jest test runner in interactive watch mode. You can also use the --coverage flag to generate a coverage report.
+
+
+
+
+    
+## Contributing
+
+We welcome contributions to this project! If you'd like to contribute, please follow these steps:
+
+    1. Fork this repository to your own account
+    2. Create a new branch with your changes: git checkout -b my-new-feature
+    3. Commit your changes: git commit -am 'Add some feature'
+    4. Push to the branch: git push origin my-new-feature
+    5. Submit a pull request through the GitHub website
+
+## Libraries Used
+
+- [@emotion/react](https://emotion.sh/docs/emotion-react) and [@emotion/styled](https://emotion.sh/docs/introduction)
+- [Material-UI](https://mui.com/)
+- [@octokit/rest](https://octokit.github.io/rest.js/v19)
+- [react-hook-form](https://react-hook-form.com/)
+- [Joi](https://joi.dev/api/?v=17.4.2)
+- [Zustand](https://github.com/pmndrs/zustand#readme)
+- [Jest](https://jestjs.io/docs/getting-started)
+- [React Hook Testing Library](https://react-hooks-testing-library.com/)
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
