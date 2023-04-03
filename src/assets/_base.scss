@@ -1,0 +1,37 @@
+//Core
+
+
+@import "helpers/functions";
+
+@import "helpers/variables";
+
+@import "helpers/mixins";
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+
+@import 'helpers';
+
+@import 'components';
+
+
+html {
+  width: 100vw;
+}
+
+#shell {
+  position: relative;
+  z-index: 2;
+}
+#content {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+}
+
+body {
+  background-color: #22272E !important;
+}
+
